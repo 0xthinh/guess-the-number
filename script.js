@@ -113,11 +113,11 @@ function myFunction(num) {
 
   const modalWin = function () {};
 
-  if (inputValue.toString() == array1.toString() && count <= 5) {
+  if (inputValue.toString() == array1.toString() && count <= 8) {
     document.querySelector("#modal-box-win").classList.remove("hidden-win");
-  } else if (count > 5) {
+  } else if (count > 8) {
     document.querySelector("#modal-box-lose").classList.remove("hidden-lose");
-  } else if (inputValue.toString() !== array1.toString() && count == 10) {
+  } else if (inputValue.toString() !== array1.toString() && count == 8) {
     document.querySelector("#modal-box-lose").classList.remove("hidden-lose");
   }
   console.log(inputValue.toString(), array1.toString());
